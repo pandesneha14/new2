@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Assignment Help Provider Since 2012 | EssayCorp</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="essaycorpicon.png " type="image/x-icon">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins, sans-serif;
+        }
+
+        /* Cards Css  */
+        .card {
+            background-color: white;
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 0 8px 16px rgba(124, 121, 121, 0.2);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        h3,
+        p.fw-bold {
+            margin: 15px 0;
+            color: #333;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .fonts {
+            font-size: 24px;
+        }
+
+        /* Designer Cards Css*/
+        .profile-card {
+            padding: 20px;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 77, 168, 0.3);
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-card img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 10px;
+            border: 4px solid #004da8;
+            box-shadow: 0px 0px 10px rgba(0, 77, 168, 0.5);
+        }
+
+        .profile-card h4 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .profile-card .rating {
+            color: #f39c12;
+            margin-top: 5px;
+        }
+
+        .profile-card .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .profile-card .hire-btn {
+            display: block;
+            margin: 15px auto;
+            padding: 8px 15px;
+            border: 1px solid #004da8;
+            background-color: #004da8;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .profile-card .hire-btn:hover {
+            background-color: #003366;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .profile-card {
+                margin-bottom: 20px;
+            }
+
+            .profile-card img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .profile-card h4 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .profile-card {
+                padding: 15px;
+            }
+
+            .profile-card .description {
+                font-size: 12px;
+            }
+
+            .profile-card .hire-btn {
+                padding: 5px 10px;
+            }
+        }
+
+
+
+        /* Navbar Css  */
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+        }
+
+        .dropdown-menu {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+        }
+
+        .btn-order {
+            margin-left: 15px;
+        }
+
+        .user-icon {
+            width: 30px;
+            margin-left: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                text-align: left;
+                margin: 0;
+            }
+
+            .btn-order {
+                margin: 10px 0;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .navbar-nav {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        .mbadrop {
+            display: none;
+            position: relative;
+        }
+
+        .mba:hover .mbadrop {
+            display: block;
+            position: absolute;
+            background-color: white;
+            left: 105%;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Footer css  */
+        footer {
+            background: transparent linear-gradient(180deg, #f6f6fa, #f5f6fa 0, #d2e8ff) 0 0 no-repeat padding-box;
+            background: url(footer-bg.png);
+            /* padding: 40px 0; */
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 30px;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #205bb3;
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        p,
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #205bb3;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #205bb3;
+        }
+
+        .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: none;
+            outline: none;
+            flex: 1;
+            box-sizing: border-box;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #205bb3;
+            color: white;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 1.5rem;
+            color: #205bb3;
+        }
+
+        .social-icons a:hover {
+            color: #205bb3;
+        }
+
+        .footer-bottom {
+            background-color: #205bb3;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-column {
+                flex-basis: 100%;
+                text-align: center;
+            }
+
+            .newsletter {
+                width: 100%;
+                max-width: none;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
+        .footer-column ul {
+            list-style-type: none;
+            /* Removes bullet points */
+            padding: 0;
+            /* Removes default padding */
+        }
+
+        .footer-column li {
+            margin: 5px 0;
+        }
+
+        .footer-background {
+            background: white url(footer-bg.png) no-repeat right top;
+            background-size: contain;
+            border-top: 1px solid #e1ecff;
+            border-bottom: 1px solid #e1ecff;
+            /* padding: 60px 0 30px 0; */
+
+        }
+
+        .footer-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-bottom {
+            z-index: 1;
+            position: relative;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* To style the modal */
+        .offer-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .offer-discount {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .offer-details {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* User Icon Styles */
+        .user-icon {
+            font-size: 2rem;
+            cursor: pointer;
+            color: #004da8;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Login Section */
+        .login-btn {
+            background-color: #004da8;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        /* Social Login Buttons */
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-login button {
+            width: 48%;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .social-login i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Hover and Active Effects */
+        .social-login button:hover {
+            background-color: #004da8;
+            color: white;
+            border-color: #004da8;
+        }
+
+        .social-login button:active {
+            background-color: #004da8;
+            color: white;
+            border-color: #004da8;
+        }
+
+        .modal-custom {
+            max-width: 800px;
+            /* Set desired width */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- First Session Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <!-- Logo Section -->
+                <div class="col-6 col-lg-3 d-flex align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.png" alt="Logo" width="100%"> <!-- Ensure logo has a height -->
+                    </a>
+                </div>
+
+                <!-- User Icon and Mobile Menu Button -->
+                <div class="col-6 d-lg-none d-flex justify-content-end align-items-center">
+                    <img src="user.png" alt="User Icon" class="user-icon me-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Navigation Links Section -->
+                <div class="col-12 col-lg-6 mt-3">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a href="https://www.essaycorp.com/services/online-assignment-help"
+                                            class="dropdown-item">Assignment Management</a></li>
+                                    <li><a href="https://www.essaycorp.com/services/homework-help"
+                                            class="dropdown-item">Homework Management</a></li>
+                                    <li><a href="https://www.essaycorp.com/services/thesis-dissertation-help"
+                                            class="dropdown-item">Thesis-Dissertation Help</a></li>
+                                    <li><a href="https://www.essaycorp.com/services/term-paper-help"
+                                            class="dropdown-item">Term Paper Help</a></li>
+                                    <li><a href="https://www.essaycorp.com/services/proofreading-help"
+                                            class="dropdown-item">Proofreading Help</a></li>
+                                    <li><a href="https://www.essaycorp.com/services/essay-help"
+                                            class="dropdown-item">Essay Help</a></li>
+                                    <li><a href="https://www.essaycorp.com/services/plagiarism"
+                                            class="dropdown-item">Plagiarism Check</a></li>
+                                    <li><a href="https://www.essaycorp.com/referencing-help"
+                                            class="dropdown-item">Referencing Help</a></li>
+                                    <li><a href="https://www.essaycorp.com/online-exam-test-quiz"
+                                            class="dropdown-item">Online Exam/Text/Quiz</a></li>
+                                    <li><a href="https://www.essaycorp.com/essay-writing-service-in-canada"
+                                            class="dropdown-item">Essay Writing Canada</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown nested-dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="subjectDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Subject
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="subjectDropdown">
+                                    <li class="mba"><a href="#" class="dropdown-item">Management/MBA</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px;  margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/marketing-assignment-help">Marketing</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/leadership-assignment-help">Leadership</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/hospitality-management-assignment-help">Hospitality</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/human-resource-management-assignment-help">Human
+                                                                Resourses</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/marketing-research-assignment-help">Marketing
+                                                                Research</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-environment-assignment-help">Business
+                                                                Environment</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/mba-essay-writing-service">MBA
+                                                                Essay</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/mba-assignment-help">MBA</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/organizational-behavior-assignment-help">Organization
+                                                                Behavior</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/relationship-marketing-assignment-help">Relationship
+                                                                Marketing</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-management-assignment-help">Business
+                                                                Management</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-development-assignment-help">Business
+                                                                Development</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-ethics-assignment-help">Business
+                                                                Ethics</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/organization-culture-assignment-help">Organization
+                                                                Culture</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-plan-assignment-help">Business
+                                                                Planning</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/operation-research-assignment-help">Operation
+                                                                Research</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/consumer-behavior-assignment-help">Consumer
+                                                                Behavior</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/strategic-management-assignment-help">Strategic
+                                                                Management</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/information-technology-management-assignment-help">IT
+                                                                Management</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/change-management-assignment-help">Change
+                                                                Management</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/management-assignment-help">Management</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/international-equity-market-assignment-help">International
+                                                                Equity Market</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/project-management-assignment-help">Project
+                                                                Management</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/cross-cultural-management-assignment-help">Cross
+                                                                Cultural Management</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/compensation-management-assignments-help">Compensation
+                                                                Management</a> </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/public-relation-assignment-help">Public
+                                                                Relation</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/internship-assignment-help">Internship</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Finance/Accounting</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px;  margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/accounting-assignment-help">Accounting</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/debenture-assignment-help">Debenture</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/bookkeeping-assignment-help">Bookkeeping</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/firm-valuation-assignment-help">Firm
+                                                                Valuation</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/capital-budgeting-assignment-help">Capital
+                                                                Budgeting</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/perdisco-assignment-help">Perdisco/MyOB</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/accounting-101-assignment-help">Accounting
+                                                                101</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/behavioral-finance-assignment-help">Behavioral
+                                                                Finance</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/offshore-banking-assignment-help">Offshore
+                                                                Banking</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/financial-accounting-assignment-help">Financial
+                                                                Accounting</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/cost-accounting-assignment-help">Cost
+                                                                Accounting</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/corporate-finance-assignment-help">Corporate
+                                                                Finance</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-accounting-assignment-help">Business
+                                                                Accounting</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/accounting-concepts-assignment-help">Accounting
+                                                                Concepts</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/finance-assignment-help">Finance</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/finance-planning-assignment-help">Finance
+                                                                Planning</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/corporate-banking-assignment-help">Corporate
+                                                                Banking</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/cash-flow-statement-assignment-help">Cash
+                                                                Flow Statement</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/management-accounting-assignment-help">Management
+                                                                Accounting</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Taxation/Law</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px;  margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/taxation-assignment-help">Taxation</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/law-enforcement-assignment-help">Law
+                                                                Enforcement</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/political-science-assignment-help">Political
+                                                                Science</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/australian-taxation-assignment-help">Australian
+                                                                Texation</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/contract-law-assignment-help">Contract
+                                                                Law</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/law-assignment-help">Law</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/uk-taxation-assignment-help">U.K
+                                                                Texation</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/constitutional-law-assignment-help">Constitutional
+                                                                Law</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-law-assignment-help">Business
+                                                                Law</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/criminology-assignment-help">Criminology</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Medical/Science</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px;  margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/science-assignment-help">Science</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/pathophysiology-assignment-help">Pathophysiology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/paleontology-assignment-help">Paleontology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/biotechnology-assignment-help">BioTechnology</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/biology-assignment-help">Biology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/nursing-assignment-help">Nursing</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/pathology-assignment-help">Pathology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/sports-science-assignment-help">Sports
+                                                                Science</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/zoology-assignment-help">Zoology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/gynaecological-nursing-assignment-help">Gynaecology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/pharmacology-assignment-help">Pharmacology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/biometry-assignment-help">Biometry</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/chemistry-assignment-help">Chemistry</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/vertebrates-assignment-help">Vertebrates</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/quaternary-science-assignment-help">Quaternary
+                                                                Science</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/medical-science-assignment-help">Medical
+                                                                Science</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Engineering</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px; margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/matlab-assignment-help">Matlab</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/fluid-mechanics-assignment-help">Fluid
+                                                                Mechanics</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/traffic-engineering-assignment-help">Traffic
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/geomatics-assignment-help">Geomatics</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/mechanical-engineering-assignment-help">Mechanical
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/biomedical-engineering-assignment-help">Biomedical
+                                                                Engineering</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/civil-engineering-assignment-help">Civil
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/aerospace-engineering-assignment-help">Aerospace
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/nuclear-engineering-assignment-help">Nuclear
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/solid-modeling-assignment-help">Solid
+                                                                Modeling</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/geotechnical-engineering-assignment-help">Geotechnical</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/engineering-ethics-assignment-help">Engineering
+                                                                Ethics</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/electrical-engineering-assignment-help">Electrical
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/chemical-engineering-assignment-help">Chemical
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/solid-mechanics-assignment-help">Solid
+                                                                Mechanics</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/thermal-engineering-assignment-help">Thermal
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/thermodynamics-assignment-help">Thermodynamics</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/architecture-assignment-help">Architecture</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/autocad-assignment-help">AutoCard</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/abaqus-assignment-help">Abaqus</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/computer-engineering-assignment-help">Computer
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/materials-engineering-assignment-help">Materials
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/structural-engineering-assignment-help">Structurals
+                                                                Engineering</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/engineering-assignment-help">Engineering</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Social Science</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px; margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/microeconomics-assignment-help">Microeconomics</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/geography-assignment-help">Geography</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/normative-economics-assignment-help">Normative
+                                                                Economics</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/communication-system-assignment-help">Communication
+                                                                System</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/economics-assignment-help">Economics</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/political-science-assignment-help">Political
+                                                                Science</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/philosophy-assignment-help">Philosophy</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/humanities-assignment-help">Humanities</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/social-science-assignment-help">Social
+                                                                Science</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/mass-communication-assignment-help">Mass
+                                                                Communication</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/history-assignment-help">History</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/anthropology-assignment-help">Anthropology</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/anthropology-assignment-help">Communication</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Computer Science</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px; margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/computer-science-assignment-help">Computer
+                                                                Science</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/c++-assignment-help">C++</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/html-assignment-help">HTML</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/computer-architecture-assignment-help">Computer
+                                                                Architecture</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/maple-assignment-help">Maple</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/oracle-assignment-help">Oracle</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/php-assignment-help">PHP</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/database-normalization-assignment-help">Database
+                                                                Normalization</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/software-engineering-assignment-help">Software
+                                                                Engineering</a> </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/oxmetrics-assignment-help">OxMetrics</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/artificial-intelligence-assignment-help">Artificial
+                                                                Intelligence</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/data-research-assignment-help">Data
+                                                                Research</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/sql-assignment-help">SQL</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/ruby-assignment-help">Ruby</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/cloud-computing-assignment-help">Cloud
+                                                                Computing</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/programming-assignment-help">Programming</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/operating-system-assignment-help">Operating
+                                                                system</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/data-research-assignment-help">Data
+                                                                Structure</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/python-assignment-help">Python</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/computer-network-assignment-help">Computer
+                                                                Network</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/computer-graphics-assignment-help">Computer
+                                                                Graphics</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/object-oriented-programming-assignment-help">OOPs</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/android-assignment-help">Android</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/java-assignment-help">Java</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/linux-assignment-help">Linux</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/racket-programming-assignment-help">Racket</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/computation-assignment-help">Computation</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/uml-diagram-assignment-help">UML
+                                                                Diagram</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/information-technology-assignment-help">Information
+                                                                Technology</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Mathematics</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px; margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/math-assignment-help">Math</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/geometry-assignment-help">Geometry</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/applied-math-assignment-help">Applied
+                                                                Mathematics</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/math-homework-help">Homework</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/trigonometry-assignment-help">Trigonometry</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/binomial-theorem-assignment-help">Binomial
+                                                                Theorem</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/arithmetic-assignment-help">Arithmetic</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/linear-algebra-assignment-help">Linear
+                                                                Algebra</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/probability-distributions-assignment-help">Probability
+                                                                Distributions</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/mathcad-assignment-help">Mathcard</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/calculus-assignment-help">Calculus</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">English</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px; margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/english-assignment-help">English</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/english-essay-writing">English
+                                                                Essay</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/literature-essay-help">Literature</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Statistics</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px; margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/statistics-assignment-help">Statistics</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/permutations-and-combinations-assignment-help">Permutations
+                                                                & Combin</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/hypothesis-testing-assignment-help">Hypothesis</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/spss-assignment-help">SPSS</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/business-statistics-assignment-help">Business
+                                                                Statistics</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/probability-assignment-help">Probability</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/regression-analysis-assignment-help">Regression
+                                                                Analysis</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/statistical-simulation-assignment-help">Statistical
+                                                                Simulation</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="mba"><a href="#" class="dropdown-item">Writing</a>
+                                        <div class="container mbadrop shadow border"
+                                            style="width: 930px; font-size: 14px;  margin-top: -40px; margin-left: -10px;">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/academic-assignment-writing">Academic</a>
+                                                        </li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/reflective-essay-writing">Reflective
+                                                                Essay</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/five-paragraph-essay-writing-help">Five
+                                                                Paragraph</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/thesis-writing-help">Thesis
+                                                                Writing</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/paper-writing-help-service">Paper
+                                                                Writing</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/essay-writing-help">Essay
+                                                                Writing</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/case-study-assignment-help">Case
+                                                                Study</a></li>
+                                                        <li class="py-2"><a
+                                                                href="https://www.essaycorp.com/resume-writing-help">Resume
+                                                                Study</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="experts.html">Experts</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="reviews.html">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown nested-dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                    <li><a href="https://www.essaycorp.com/samples" class="dropdown-item">Samples</a>
+                                    </li>
+                                    <li><a href="https://www.essaycorp.com/blog/" class="dropdown-item">Blog </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Button and User Icon Section for larger screens -->
+                <div class="col-lg-3 d-none d-lg-flex justify-content-end align-items-center">
+                    <!-- Order Now button visible on larger screens -->
+                    <button class="text-light border-0 btn-order p-2 border-0 rounded"
+                        style="background-color: #205bb3;" type="button"><a href="https://www.essaycorp.com/order_now"
+                            class="text-decoration-none text-light">Order Now</a></button>
+                    <img src="user.png" alt="User Icon" class="user-icon ms-3" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu (Toggler opens this) -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <!-- Other menu items here -->
+
+                <!-- Order Now button inside mobile menu, hidden on larger screens -->
+                <li class="nav-item d-lg-none">
+                    <button class="text-light border-0 btn-order p-2 border-0 rounded w-100 mt-2"
+                        style="background-color: #205bb3;" type="button">Order Now</button>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- Login/Signup Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-custom"> <!-- Use a custom class here -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Image Column -->
+                        <div class="col-lg-6 p-0"> <!-- Remove padding to make the image full width -->
+                            <img src="form.png" alt="Description"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                            <!-- Full height and cover image -->
+                        </div>
+    
+                        <!-- Content Column -->
+                        <div class="col-lg-6 d-flex flex-column justify-content-center">
+                            <!-- Center content vertically -->
+                            <h5 class="text-center" id="loginModalLabel">Login / Sign Up</h5> <!-- Move title here -->
+                            <div class="text-center title-underline"></div> <!-- Line below title -->
+                            <p class="text-center">Login or Sign Up With Your Email to Complete the Order Process</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Id" required>
+                                </div>
+                                <button type="submit" class="btn login-btn">Continue With Email</button>
+                            </form>
+    
+                            <div class="text-center mt-3">Or Continue with</div>
+    
+                            <div class="d-flex justify-content-between social-login mt-3">
+                                <!-- Google Login Button -->
+                                <button class="btn" id="googleLoginBtn">
+                                    <img src="google (1).png" alt="Google" width="20px" class="me-2">Google
+                                </button>
+                                <!-- Facebook Login Button -->
+                                <button class="btn" id="facebookLoginBtn">
+                                    <img src="facebook (6).png" alt="face" width="20px" class="me-2">Facebook
+                                </button>
+                            </div>
+    
+                            <p class="text-center mt-3 small">
+                                By clicking "Continue with Email", you agree to our terms of service and privacy policy.
+                                We’ll occasionally send you promo and account-related emails.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Second Card Session -->
+    <div class="container mt-3">
+        <h3 class="section-title text-center text-dark">The Best Assignment Writers</h3>
+        <p class="text-center text-secondary mb-4">Real Writers Only - No AI Evidence</p>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="John_William.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>John Williams</h4>
+                            <p class="text-muted" style="margin: 0;">History graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733;  &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">John delivers accurate history research and high-quality writing
+                        for your academic needs.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Emily Turner.png" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Emily Turner</h4>
+                            <p class="text-muted" style="margin: 0;">MBA graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733;  &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Emily excels in crafting well-researched, structured business
+                        content for your assignments.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Michael Davis.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Michael Davis</h4>
+                            <p class="text-muted" style="margin: 0;">PhD in Psychology</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Michael specializes in insightful, detailed psychology papers
+                        reflecting deep analysis.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Sophia Carter.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Sophia Carter</h4>
+                            <p class="text-muted" style="margin: 0;">M. Grad in Science</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Sophia is known for her well-researched, high-quality political
+                        essays.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="James Thompson.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>James Thompson</h4>
+                            <p class="text-muted" style="margin: 0;">Graduate in Engineering</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">James delivers technical assignments with research and practical
+                        application expertise.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="John Mitchell.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>John Mitchell</h4>
+                            <p class="text-muted" style="margin: 0;">Master's graduate in Finance</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">John specializes in comprehensive and detailed financial reports.
+                    </p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Liam Johnson.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Liam Johnson</h4>
+                            <p class="text-muted" style="margin: 0;">PhD candidate in Physics</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Liam excels in complex physics calculations and research
+                        assignments.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Olivia Bennett.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Olivia Bennett</h4>
+                            <p class="text-muted" style="margin: 0;">Master's graduate in Psychology</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Olivia provides insightful, structured psychology papers with
+                        precision.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Noah Williams.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Noah Williams</h4>
+                            <p class="text-muted" style="margin: 0;">Engineering graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Noah delivers expert technical assistance in MATLAB assignments.
+                    </p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="James Edwards.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>James Edwards</h4>
+                            <p class="text-muted" style="margin: 0;">Law graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">James writes precise, well-researched legal documents with
+                        clarity.</p>
+                    <button class="hire-btn">
+                        <a href="https://www.essaycorp.com/order_now" class="text-light">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Mia Robinson.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Mia Robinson</h4>
+                            <p class="text-muted" style="margin: 0;">Chemistry graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Mia provides comprehensive lab reports, ensuring accuracy and
+                        clarity in every experiment conducted for clients.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Lucas Anderson.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Lucas Anderson</h4>
+                            <p class="text-muted" style="margin: 0;">Master's in Economics</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Lucas provides detailed economic analysis, enhancing
+                        decision-making through thorough forecasting and insightful reports for clients.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 13 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Grace Davis.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Grace Davis</h4>
+                            <p class="text-muted" style="margin: 0;">IT specialist</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Grace excels in technical report writing and coding, ensuring
+                        clients receive high-quality technical documentation and analysis.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Emily Taylor .jpg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Emily Taylor</h4>
+                            <p class="text-muted" style="margin: 0;">Master's in Business Administration</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Emily crafts comprehensive business plans and case studies,
+                        ensuring thorough research and strategic insights for clients.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 15 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Isabella Moore.jpg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Isabella Moore</h4>
+                            <p class="text-muted" style="margin: 0;">Master's in International Relations</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Isabella provides in-depth essays on global politics and
+                        diplomacy, analyzing key issues with clarity and insight.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 16 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="William Brown.jpeg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>William Brown</h4>
+                            <p class="text-muted" style="margin: 0;">Mechanical Engineering graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">William delivers outstanding technical reports and innovative
+                        engineering designs tailored to client specifications and requirements.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 17 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Charlotte Lewis.jpg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Charlotte Lewis</h4>
+                            <p class="text-muted" style="margin: 0;">Master's in Sociology</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Charlotte excels in delivering thorough social research and
+                        analysis, providing insights that drive effective solutions for clients.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 18 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Amelia White.jpg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Amelia White</h4>
+                            <p class="text-muted" style="margin: 0;">Accounting graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Amelia produces clear, precise financial statements and reports,
+                        ensuring compliance and accuracy for all clients' financial needs.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 19 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Samuel White.jpg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Samuel White</h4>
+                            <p class="text-muted" style="margin: 0;">Civil Engineering graduate</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Samuel excels in providing expert structural design and
+                        comprehensive project management reports tailored to client requirements.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+            <!-- Card 20 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="profile-card">
+                    <div class="d-flex align-items-center">
+                        <img src="Ella Scott.jpg" alt="Profile Picture">
+                        <div class="ms-3">
+                            <h4>Ella Scott</h4>
+                            <p class="text-muted" style="margin: 0;">Master's in Human Resources</p>
+                            <div class="rating">&#9733; &#9733; &#9733; &#9733; ☆</div>
+                        </div>
+                    </div>
+                    <p class="description text-center">Ella specializes in developing effective HR strategies and
+                        studying organizational behavior to improve workplace dynamics.</p>
+                    <button class="hire-btn"><a href="https://www.essaycorp.com/order_now" class="text-light">Hire
+                            Me</a></button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <div class="container-fluid">
+        <footer class="mt-5 mb-5 footer-background">
+            <div class="footer-container">
+                <div class="footer-column mx-5">
+                    <h2>About</h2>
+                    <p>EssayCorp is the best assignment help provider and the right platform for every student who
+                        requires professional help with their academic assignments.</p>
+                    <div class="contact-info">
+                        <span><i class="fa-solid fa-phone"></i> <a href="tel:+17243846101">+1 (724) 384-6101</a></span>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:essaycorp.aus@gmail.com">essaycorp.aus@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-column ps-5">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="https://www.essaycorp.com/services/online-assignment-help">Assignment</a></li>
+                        <li><a href="https://www.essaycorp.com/services/plagiarism">Plagiarism</a></li>
+                        <li><a href="https://www.essaycorp.com/case-study-assignment-help">Case Study</a></li>
+                        <li><a
+                                href="https://www.essaycorp.com/services/thesis-dissertation-help">Thesis/Dissertation</a>
+                        </li>
+                        <li><a href="https://www.essaycorp.com/services/essay-help">Essay Help</a></li>
+                        <li><a href="https://www.essaycorp.com/services/homework-help">Homework Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Informations</h2>
+                    <ul>
+                        <li><a href="https://www.essaycorp.com/offers">Offers</a></li>
+                        <li><a href="https://www.essaycorp.com/about-us">About Us</a></li>
+                        <li><a href="https://www.essaycorp.com/blog/">Blog</a></li>
+                        <li><a href="https://www.essaycorp.com/essaycorp-reviews">Review</a></li>
+                        <li><a href="https://www.essaycorp.com/ask-experts">Ask Experts</a></li>
+                        <li><a href="https://www.essaycorp.com/privacy-policy">Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Our Countries</h2>
+                    <ul>
+                        <li><a href="https://www.essaycorp.com/country/united-states">USA</a></li>
+                        <li><a href="https://www.essaycorp.com/country/united-kingdom">UK</a></li>
+                        <li><a href="https://www.essaycorp.com/country/germany">Germany</a></li>
+                        <li><a href="https://www.essaycorp.com/country/australia">Australia</a></li>
+                        <li><a href="https://www.essaycorp.com/country/canada">Canada</a></li>
+                        <li><a href="https://www.essaycorp.com/country/kuwait">Kuwait</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column mt-5">
+                    <ul>
+                        <li><a href="https://www.essaycorp.com/country/uae">UAE</a></li>
+                        <li><a href="https://www.essaycorp.com/country/new-zealand">New Zealand</a></li>
+                        <li><a href="https://www.essaycorp.com/country/singapore">Singapore</a></li>
+                        <li><a href="https://www.essaycorp.com/country/france">France</a></li>
+                        <li><a href="https://www.essaycorp.com/country/saudi-arabia">Saudi Arabia</a></li>
+                        <li><a href="https://www.essaycorp.com/country/malaysia">Malaysia</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-icons text-center d-flex justify-content-end"
+                style="margin-top: -30px; margin-left: -20px;">
+                <a href="https://www.facebook.com/essaycorpinternational/" class="me-3"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/Essay_Corp" class="me-3"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/essay__corp/" class="me-3"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="https://www.youtube.com/channel/UC0445kAV1IWu2ygF_67TmAw" class="me-3"><i class="fab fa-linkedin-in"></i></a> -->
+                <a href="https://www.youtube.com/channel/UC0445kAV1IWu2ygF_67TmAw"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                © Copyright EssayCorp. All Rights Reserved
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script>
+        // Redirect user to Google login page
+        document.getElementById('googleLoginBtn').onclick = function () {
+            window.location.href = "https://accounts.google.com/o/oauth2/v2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=profile email";
+        };
+
+        // Redirect user to Facebook login page
+        document.getElementById('facebookLoginBtn').onclick = function () {
+            window.location.href = "https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_FACEBOOK_APP_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email,public_profile";
+        };
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
